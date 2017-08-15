@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?><!--&lt;!&ndash;<LinearLayout >&ndash;&gt;--><!--<LinearLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--&gt;--><!--<TextView--><!--android:text="@string/text_about_info"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:textSize="25dp"--><!--android:layout_marginTop="20dp"--><!--android:layout_marginLeft="10dp"--><!--android:layout_marginRight="10dp"--><!--android:maxLines="100"--><!--android:scrollbars="vertical"--><!--android:id="@+id/wifi_list_fragment_about_textview" />--><!--</LinearLayout>-->
+
+
+
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+
+        <TextView
+            android:id="@+id/wifi_list_fragment_about_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:paddingBottom="300dp"
+            android:text="@string/text_about_info"
+            android:textSize="25sp" />
+
+    </ScrollView>
+
+<!--</LinearLayout>-->

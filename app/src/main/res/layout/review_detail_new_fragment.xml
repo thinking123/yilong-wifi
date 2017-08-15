@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/review_detail_new_fragment_toolbar"
+            layout="@layout/tool_bar" />
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/review_detail_new_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/review_detail_star_title" />-->
+
+        <!--<Spinner-->
+            <!--android:id="@+id/review_detail_new_fragment_spinner"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:spinnerMode="dialog"/>-->
+
+        <RatingBar
+            style="@style/RatingBar"
+            android:isIndicator="false"
+            android:layout_gravity="center"
+            android:id="@+id/review_detail_new_fragment_ratingbar"/>
+        <View style="@style/Divider"/>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:minHeight="500dp"
+            android:layout_marginTop="50dp">
+
+            <EditText
+                android:id="@+id/review_detail_new_fragment_text"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/review_detail_text_hint"
+                android:lines="5" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/review_detail_new_fragment_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/check"
+        app:layout_anchor="@id/review_detail_new_fragment_container"
+        app:layout_anchorGravity="bottom|right|end" />
+</android.support.design.widget.CoordinatorLayout>

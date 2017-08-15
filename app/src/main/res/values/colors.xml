@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2683ed</color>
+    <color name="colorPrimaryDark">#0c2bf1</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="facilityLableColor">#debb27</color>
+    <color name="locationDetailPanelHeaderColor">#ad1d28</color>
+    <color name="locationDetailPanelBodyColor">#108a93</color>
+</resources>

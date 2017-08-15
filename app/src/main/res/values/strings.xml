@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">YiLongWiFi</string>
+    <string name="action_settings">Settings</string>
+    <!-- status title-->
+    <string name="status_title_signin">登入</string>
+    <string name="status_title_signup">注册</string>
+    <string name="status_title_wifi_list">WIFI列别</string>
+    <!-- common -->
+    <string name="yilong">yi long</string>
+    <!-- sign in res -->
+    <string name="signin_account">帐号</string>
+    <string name="signin_password">密码</string>
+    <string name="signin_login_button">登入</string>
+    <string name="signin_signup_hypbt">没有帐号？点击注册.</string>
+    <string name="signin_remember_password">记住密码</string>
+
+    <string name="signin_forgot_password_hypbt">忘记密码</string>
+    <!-- sign up res -->
+    <string name="signup_account">账号</string>
+    <string name="signup_password">密码</string>
+    <string name="signup_user_name">用户名</string>
+    <string name="signup_registration_button">注册</string>
+    <string name="signup_signup_hypbt">已经注册？点击登入.</string>
+    <!--loading msg -->
+    <string name="signup_loading_title">注册</string>
+    <string name="signup_loading_msg">注册中...</string>
+    <string name="signin_loading_title">登入</string>
+    <string name="signin_loading_msg">登入中...</string>
+    <string name="wifi_list_loading_title">获取数据</string>
+    <string name="wifi_list_loading_msg">获取数据中，请等待...</string>
+    <string name="location_detail_loading_title">位置数据</string>
+    <string name="location_detail_loading_msg">获取位置数据中，请等待...</string>
+    <string name="add_review_loading_title">提交数据</string>
+    <string name="add_review_loading_msg">提交数据中，请等待...</string>
+    <!-- Tips-->
+    <string name="tip_signup_success">注册成功</string>
+    <string name="tip_signup_failure">注册失败</string>
+    <string name="tip_signin_success">登入成功</string>
+    <string name="tip_signin_failure">登入失败</string>
+    <string name="tip_add_review_success">添加成功</string>
+    <string name="tip_add_review_failure">添加失败</string>
+    <!--menus -->
+    <string name="menu_wifi_list_about">关于</string>
+    <string name="menu_wifi_list_signout">登出</string>
+    <string name="menu_wifi_list_search">查找</string>
+    <string name="menu_wifi_list_add">添加</string>
+    <string name="menu_wifi_list_toggle_open_notification">打开通知</string>
+    <string name="menu_wifi_list_toggle_close_notification">关闭通知</string>
+    <string name="menu_location_detail_add_review">添加评论</string>
+    <!--Others -->
+    <string name="list_empty">附近没有可用的wifi</string>
+    <string name="search_hint">输入要搜索的关键字</string>
+    <string name="custom_review">用户评论</string>
+    <!--dialog -->
+    <string name="dialog_ok">确定</string>
+    <string name="dialog_cancel">取消</string>
+    <string name="dialog_singout_msg">正在登出</string>
+    <string name="dialog_singout_title">登出</string>
+
+    <!--navigation drawer -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <!--navigation drawer menu -->
+    <string name="navigation_drawer_menu_home">主页</string>
+    <string name="navigation_drawer_menu_my_reviews">我的评论</string>
+    <string name="navigation_drawer_menu_notification">通知</string>
+    <string name="navigation_drawer_menu_setting">设置</string>
+    <string name="navigation_drawer_menu_other">其他</string>
+    <string name="navigation_drawer_menu_about">关于</string>
+    <!-- notifiation content-->
+    <string name="notifiation_new_location_ticker">有新的wifi信息可以查看</string>
+    <string name="notifiation_new_location_title">New</string>
+    <string name="notifiation_new_location_text">查看位置信息</string>
+    <string name="title_activity_main_slide">MainSlide</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+
+    <string name="action_example">Example action</string>
+    <!--location create activity-->
+    <string name="location_create_activity_previous_step">上一步</string>
+    <string name="location_create_activity_next_step">下一步</string>
+    <string name="location_create_activity_complete_step">完成</string>
+    <string name="location_create_activity_toolbar_title">新建WiFi信息</string>
+    <string-array name="location_create_activity_steps_info">
+        <item>基本信息</item>
+        <item>其他信息</item>
+        <item>完成</item>
+    </string-array>
+
+    <!-- location create fragment step1-->
+    <string name="location_create_step1_fragment_name">名字</string>
+    <string name="location_create_step1_fragment_address">地址</string>
+    <string name="location_create_step1_fragment_location">坐标</string>
+    <string name="location_create_step1_fragment_get_location">获取坐标</string>
+    <string name="location_create_step1_fragment_add_facities">添加设施</string>
+    <!-- location create fragment step2-->
+    <string name="location_create_step2_fragment_facilities">Facility</string>
+    <string name="location_create_step2_fragment_add">添加</string>
+    <!-- review detail-->
+    <string-array name="review_detail_star_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+    <string name="review_detail_tool_bar_title">添加评论</string>
+    <string name="review_detail_text_hint">评论</string>
+    <string name="review_detail_star_title">星级</string>
+    <!-- location detail-->
+    <string name="location_detail_header_opening_hours">Opening hours</string>
+    <string name="location_detail_header_opening_facilities">Facilities</string>
+    <string name="location_detail_header_opening_customer_reviews">Customer reviews</string>
+    <string name="location_detail_tool_bar_title">位置信息</string>
+    <string name="location_detail_tool_bar_menu_comments">查看评论</string>
+    <!-- review list-->
+    <string name="review_list_tool_bar_title">评论</string>
+
+    <!-- wifi list notification-->
+    <string name="wifi_list_notification_title">提示</string>
+    <string name="wifi_list_notification_open_msg">已经打开通知</string>
+    <string name="wifi_list_notification_closed_msg">已经关闭通知</string>
+    <!-- wifi list my review list-->
+    <string name="wifi_list_my_review_list_empty">没有评论</string>
+    <!--custom progress dialog -->
+    <string name="dialog_custom_progressdialog_msg">获取数据...</string>
+    <!--custom alert dialog -->
+    <string name="dialog_alert_dialog_title">提示</string>
+    <string name="dialog_alert_dialog_msg">是否退出</string>
+    <string name="dialog_alert_dialog_yse">是</string>
+    <string name="dialog_alert_dialog_no">否</string>
+    <!-- some wifi text-->
+    <string name="text_wifi_info">Looking for wifi and a seat?Loc8r helps you find places to work when out and about.Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you\'re looking for.</string>
+    <string name="delete">删除</string>
+    <string name="text_about_info">
+        Loc8r was created to help people find places to sit down and get a bit of work done.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed lorem ac nisi dignissim accumsan. Nullam sit amet interdum magna. Morbi quis faucibus nisi. Vestibulum mollis purus quis eros adipiscing tristique. Proin posuere semper tellus, id placerat augue dapibus ornare. Aenean leo metus, tempus in nisl eget, accumsan interdum dui. Pellentesque sollicitudin volutpat ullamcorper.
+        Suspendisse tincidunt, lectus non suscipit pharetra, purus ipsum vehicula sapien, a volutpat mauris ligula vel dui. Proin varius interdum elit, eu porttitor quam consequat et. Quisque vitae felis sed ante fringilla fermentum in vitae sem. Quisque fermentum metus at neque sagittis imperdiet. Phasellus non laoreet massa, eu laoreet nibh. Pellentesque vel magna vulputate, porta augue vel, dapibus nisl. Phasellus aliquet nibh nec nunc posuere fringilla. Quisque sit amet dignissim erat. Nulla facilisi. Donec in sollicitudin ante. Cras rhoncus accumsan rutrum. Sed aliquet ligula dui, eget laoreet turpis tempor vitae.
+    </string>
+
+</resources>

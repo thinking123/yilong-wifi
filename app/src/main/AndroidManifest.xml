@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wifi.yilong.yilongwifi">
+
+    <!-- android:theme="@style/AppTheme" -->
+    <permission
+        android:name="com.wifi.yilong.yilongwifi.PRIVATE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.wifi.yilong.yilongwifi.PRIVATE" />
+
+    <application
+        android:name=".App.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <!-- active android database define-->
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="yilongDatabase.db" />
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="
+        com.wifi.yilong.yilongwifi.Http.rest.model.User ,
+        com.wifi.yilong.yilongwifi.Http.rest.model.Location ,
+        com.wifi.yilong.yilongwifi.Http.rest.model.OpeningTime ,
+        com.wifi.yilong.yilongwifi.Http.rest.model.Review" />
+        <meta-data
+            android:name="AA_SERIALIZERS"
+            android:value="com.wifi.yilong.yilongwifi.Http.rest.gsonParse.StringArraySerializer" />
+
+        <activity android:name=".Activity.Signin.SigninActivity">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+        <activity android:name=".Activity.Signup.SignupActivity"></activity>
+        <activity
+            android:name=".Activity.WiFiList.WiFiListActivity"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".Activity.About.AboutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.WiFiList.WiFiListActivity" />
+        </activity>
+        <activity android:name=".Activity.Review.ReviewDetailActivity"></activity>
+        <activity android:name=".Activity.Review.AddReviewActivity"></activity>
+        <activity android:name=".Activity.LocationDetail.LocationDetailViewPagerActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Activity.WiFiList.WiFiListActivity" />
+        </activity>
+
+        <service android:name=".Service.LocationService"></service>
+
+        <receiver android:name=".Receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".Receiver.NotificationReceiver">
+            <intent-filter android:priority="-999">
+                <action android:name="com.wifi.yilong.yilongwifi.show_notification" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".Activity.NavigationDrawer.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--<intent-filter>-->
+            <!--<action android:name="android.intent.action.MAIN" />-->
+
+            <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <!-- new activity -->
+        <activity
+            android:name=".newActivity.splashScreen.SplashScreenActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".newActivity.introducePage.IntroducePageActivity">
+
+        </activity>
+        <activity android:name=".newActivity.signin.SigninActivity">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+
+        <activity
+            android:name=".newActivity.signup.SignupActivity"
+            android:theme="@style/AppTheme.NoActionBarCustomize">
+
+        </activity>
+        <activity
+            android:name=".newActivity.wifiList.WiFiListActivity"
+            android:theme="@style/AppTheme.NoActionBarCustomize">
+            <!--<meta-data-->
+                <!--android:name="android.app.searchable"-->
+                <!--android:resource="@xml/searchable" />-->
+        </activity>
+        <activity
+            android:name=".newActivity.locationDetail.LocationDetailActivity"
+            android:theme="@style/AppTheme.NoActionBarCustomize">
+
+        </activity>
+        <activity
+            android:name=".newActivity.review.ReviewActivity"
+            android:theme="@style/AppTheme.NoActionBarCustomize">
+
+        </activity>
+        <activity
+            android:name=".newActivity.locationCreate.locationCreateActivity"
+            android:theme="@style/AppTheme.NoActionBarCustomize">
+
+        </activity>
+        <activity android:name=".newActivity.reviewlist.ReviewListActivity"
+            android:theme="@style/AppTheme.NoActionBarCustomize">
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.MAIN" />-->
+
+                <!--<category android:name="android.intent.category.LAUNCHER" />-->
+            <!--</intent-filter>-->
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--<item>-->
+        <!--<shape-->
+            <!--android:shape="oval"-->
+            <!--&gt;-->
+            <!--<solid android:color="@color/colorPrimary"/>-->
+            <!--<padding android:bottom="3dp"-->
+                <!--android:left="3dp"-->
+                <!--android:right="3dp"-->
+                <!--android:top="3dp"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+    <item>
+        <inset android:insetBottom="2dp">
+            <selector>
+                <item android:state_pressed="false">
+                    <shape
+                        android:shape="oval"
+                        >
+                        <solid android:color="@color/colorPrimary"/>
+                        <padding android:bottom="3dp"
+                            android:left="3dp"
+                            android:right="3dp"
+                            android:top="3dp"/>
+                        <stroke android:color="@android:color/background_dark" android:width="3dp"/>
+                    </shape>
+                </item>
+
+                <item android:state_pressed="true">
+                    <shape
+                        android:shape="oval"
+                        >
+                        <solid android:color="@color/colorAccent"/>
+                        <padding android:bottom="3dp"
+                            android:left="3dp"
+                            android:right="3dp"
+                            android:top="3dp"/>
+                        <stroke android:color="@android:color/background_dark" android:width="3dp"/>
+                    </shape>
+                </item>
+            </selector>
+        </inset>
+    </item>
+
+
+    <item android:drawable="@drawable/remove" />
+
+</layer-list>

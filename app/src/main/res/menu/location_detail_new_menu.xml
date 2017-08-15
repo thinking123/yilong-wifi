@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/location_detail_menu_comments"
+        android:title="@string/location_detail_tool_bar_menu_comments"
+        android:icon="@drawable/comments"
+        app:showAsAction="ifRoom"/>
+</menu>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/tool_bar"
+        android:id="@+id/location_create_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"/>
+    <com.anton46.stepsview.StepsView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/location_create_stepsview"
+        android:layout_below="@id/location_create_toolbar">
+
+    </com.anton46.stepsview.StepsView>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/location_create_container"
+        android:layout_below="@id/location_create_stepsview">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/location_create_activity_previous_step"
+            android:id="@+id/location_create_previous_step"/>
+        <Button
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text="@string/location_create_activity_next_step"
+            android:id="@+id/location_create_next_step"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBarCustomize" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!--Task color(tool bar color) -->
+        <item name="colorPrimary">#1bdf1e</item>
+        <!--status color (topest bar color)-->
+        <item name="colorPrimaryDark">#f24506</item>
+        <!--body color (body font color) -->
+        <item name="colorAccent">#f112e9</item>
+        <!-- tool bar menu popup style and color-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+        <item name="actionMenuTextColor">@color/colorPrimary</item>
+        <!--context menu pop up toolbar-->
+        <item name="windowActionModeOverlay">true</item>
+        <!--context menu color-->
+        <item name="actionModeBackground">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.ToolbarMenu" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="actionOverflowMenuStyle">@style/OverflowMenu</item>
+    </style>
+    <style name="OverflowMenu" parent="Widget.AppCompat.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>
+        <item name="android:popupBackground">@color/colorPrimary</item>
+        <item name="android:dropDownVerticalOffset">5dp</item>
+        <item name="android:dropDownHorizontalOffset">0dp</item>
+    </style>
+
+    <style name="LocationDetailPanelHeader">
+        <item name="android:background">@color/locationDetailPanelHeaderColor</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">30sp</item>
+    </style>
+    <style name="RatingBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:numStars">5</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+    <style name="LocationDetailPanelHeaderCardView" parent="CardView">
+        <item name="cardCornerRadius">2dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+
+</resources>

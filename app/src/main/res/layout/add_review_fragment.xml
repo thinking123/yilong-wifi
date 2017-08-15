@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_review_ratingBar"
+            android:numStars="5"/>
+
+        <EditText
+            android:text="TextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/add_review_text"
+            android:lines="8"
+            android:minLines="6"
+            android:scrollbars="vertical"
+            android:gravity="top|left"
+            android:maxLength="1000"/>
+
+        <!--<EditText-->
+            <!--android:inputType="textMultiLine" &lt;!&ndash; Multiline input &ndash;&gt;-->
+        <!--android:lines="8" &lt;!&ndash; Total Lines prior display &ndash;&gt;-->
+        <!--android:minLines="6" &lt;!&ndash; Minimum lines &ndash;&gt;-->
+        <!--android:gravity="top|left" &lt;!&ndash; Cursor Position &ndash;&gt;-->
+        <!--android:maxLines="10" &lt;!&ndash; Maximum Lines &ndash;&gt;-->
+        <!--android:layout_height="wrap_content" &lt;!&ndash; Height determined by content &ndash;&gt;-->
+        <!--android:layout_width="fill_parent" &lt;!&ndash; Fill entire width &ndash;&gt;-->
+        <!--android:scrollbars="vertical" &lt;!&ndash; Vertical Scroll Bar &ndash;&gt;-->
+        <!--/>-->
+
+    </LinearLayout>
+
+    <Button
+        android:text="Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add_review_submit"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

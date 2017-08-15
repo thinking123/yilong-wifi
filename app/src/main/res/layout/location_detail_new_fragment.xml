@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_drawer_app_bar_coordinatorlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/location_detail_new_fragment_toolbar"
+            layout="@layout/tool_bar"
+            app:layout_scrollFlags="scroll|snap" />
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/location_detail_new_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_collapseMode="parallax">
+
+            <android.support.v7.widget.CardView
+                style="@style/LocationDetailPanelHeaderCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RatingBar
+                        android:id="@+id/location_detail_new_fragment_ratingBar"
+                        style="@style/RatingBar" />
+
+                    <TextView
+                        android:id="@+id/location_detail_new_fragment_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="TextView" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LocationDetailPanelHeaderCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        style="@style/LocationDetailPanelHeader"
+                        android:layout_weight="0"
+                        android:text="@string/location_detail_header_opening_hours" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/location_detail_new_fragment_opening_hours"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="0"
+                        android:background="@color/locationDetailPanelBodyColor"
+                        android:orientation="vertical" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                style="@style/LocationDetailPanelHeaderCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        style="@style/LocationDetailPanelHeader"
+
+                        android:layout_weight="0"
+                        android:text="@string/location_detail_header_opening_facilities" />
+
+                    <LinearLayout
+                        android:id="@+id/location_detail_new_fragment_facilities"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/location_detail_new_fragment_floatingActionButton"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:clickable="true"-->
+        <!--app:layout_anchor="@id/location_detail_new_fragment_container"-->
+        <!--app:layout_anchorGravity="bottom|right|end"-->
+        <!--app:srcCompat="@drawable/add" />-->
+</android.support.design.widget.CoordinatorLayout>
+
+    <!--<android.support.design.widget.CoordinatorLayout--><!--xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:card_view="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:id="@+id/navigation_drawer_app_bar_coordinatorlayout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent">-->
+
+
+    <!--<android.support.design.widget.AppBarLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+
+    <!--<android.support.design.widget.CollapsingToolbarLayout--><!--android:id="@+id/navigation_drawer_app_bar_collapsingtoolbarlayout"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:contentScrim="?attr/colorPrimary"--><!--app:expandedTitleMarginEnd="64dp"--><!--app:expandedTitleMarginStart="48dp"--><!--app:layout_scrollFlags="scroll|exitUntilCollapsed">-->
+
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:orientation="vertical"--><!--app:layout_collapseMode="parallax">--><!--<include--><!--android:id="@+id/location_detail_new_fragment_toolbar"--><!--layout="@layout/tool_bar"--><!--app:layout_scrollFlags="scroll|snap" />--><!--<android.support.v7.widget.CardView--><!--style="@style/LocationDetailPanelHeaderCardView"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<RatingBar--><!--android:id="@+id/location_detail_new_fragment_ratingBar"--><!--style="@style/RatingBar" />-->
+
+    <!--<TextView--><!--android:id="@+id/location_detail_new_fragment_address"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content"--><!--android:text="TextView" />--><!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView--><!--style="@style/LocationDetailPanelHeaderCardView"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:id="@+id/textView"--><!--style="@style/LocationDetailPanelHeader"--><!--android:layout_weight="0"--><!--android:text="@string/location_detail_header_opening_hours" />-->
+
+    <!--&lt;!&ndash;<android.support.v4.widget.NestedScrollView&ndash;&gt;--><!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;--><!--&lt;!&ndash;android:layout_height="wrap_content">&ndash;&gt;-->
+
+    <!--<android.support.v7.widget.RecyclerView--><!--android:id="@+id/location_detail_new_fragment_opening_hours"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_margin="10dp"--><!--android:layout_weight="0"--><!--android:background="@color/locationDetailPanelBodyColor"--><!--android:orientation="vertical" />--><!--&lt;!&ndash;</android.support.v4.widget.NestedScrollView>&ndash;&gt;-->
+
+    <!--</LinearLayout>--><!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView--><!--style="@style/LocationDetailPanelHeaderCardView"--><!--android:layout_width="match_parent"--><!--android:layout_height="wrap_content">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:id="@+id/textView2"--><!--style="@style/LocationDetailPanelHeader"-->
+
+    <!--android:layout_weight="0"--><!--android:text="@string/location_detail_header_opening_facilities" />-->
+
+    <!--<LinearLayout--><!--android:id="@+id/location_detail_new_fragment_facilities"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:layout_weight="1"--><!--android:orientation="horizontal"></LinearLayout>--><!--</LinearLayout>--><!--</android.support.v7.widget.CardView>--><!--</LinearLayout>-->
+
+    <!--</android.support.design.widget.CollapsingToolbarLayout>-->
+
+    <!--</android.support.design.widget.AppBarLayout>-->
+
+    <!--<android.support.v4.widget.NestedScrollView--><!--android:id="@+id/location_detail_new_fragment_container"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+    <!--<LinearLayout--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--android:orientation="vertical">-->
+
+    <!--<TextView--><!--android:id="@+id/textView3"--><!--style="@style/LocationDetailPanelHeader"-->
+
+    <!--android:layout_weight="0"--><!--android:text="@string/location_detail_header_opening_customer_reviews" />-->
+
+    <!--<android.support.v7.widget.RecyclerView--><!--android:id="@+id/location_detail_new_fragment_customer_reviews"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent" />--><!--</LinearLayout>-->
+
+    <!--</android.support.v4.widget.NestedScrollView>-->
+
+    <!--<android.support.design.widget.FloatingActionButton--><!--android:id="@+id/location_detail_new_fragment_floatingActionButton"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:layout_marginBottom="10dp"--><!--android:layout_marginRight="10dp"--><!--android:clickable="true"--><!--app:layout_anchor="@id/location_detail_new_fragment_container"--><!--app:layout_anchorGravity="bottom|right|end"--><!--app:srcCompat="@drawable/add" />--><!--</android.support.design.widget.CoordinatorLayout>-->

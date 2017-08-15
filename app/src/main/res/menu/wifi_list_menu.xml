@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto">
+<item
+    android:id="@+id/wifi_list_about"
+    android:title="@string/menu_wifi_list_about"
+    app:showAsAction="never"
+    android:icon="@drawable/about"
+    android:orderInCategory="4"/>
+<item
+    android:id="@+id/wifi_list_signout"
+    android:title="@string/menu_wifi_list_signout"
+    app:showAsAction="never"
+    android:icon="@drawable/account"
+    android:orderInCategory="3"/>
+<item
+    android:id="@+id/wifi_list_search"
+    android:title="@string/menu_wifi_list_search"
+    app:showAsAction="always"
+    android:icon="@drawable/search"
+    android:actionViewClass="android.widget.SearchView"
+    android:orderInCategory="1"/>
+<item
+    android:id="@+id/wifi_list_add"
+    android:title="@string/menu_wifi_list_add"
+    app:showAsAction="ifRoom|withText"
+    android:icon="@drawable/add"
+    android:orderInCategory="2"/>
+    <item
+        android:id="@+id/wifi_list_toggle_notification"
+        android:title="@string/menu_wifi_list_toggle_open_notification"
+        app:showAsAction="ifRoom|withText"
+        android:icon="@drawable/notification"
+        android:orderInCategory="5"/>
+
+</menu>
